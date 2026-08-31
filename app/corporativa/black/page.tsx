@@ -74,7 +74,7 @@ export default function AdBlack() {
         <div className="corp-shell">
           <p className="black-eyebrow">AD Consulting</p>
           <h2>Redefinimos la experiencia de <span>impactar juntos.</span></h2>
-          <img src="/ad-black-logo-silver.webp" alt="AD Consulting" />
+          <img src="/ad-consulting-logo-light.png" alt="AD Consulting" />
           <a className="black-button black-button-light" href="mailto:contacto@adconsulting.cl?subject=Quiero%20conocer%20AD%20Black">Conversemos <CtaIcon /></a>
         </div>
       </section>
