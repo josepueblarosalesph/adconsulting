@@ -23,9 +23,6 @@ const staggerSelectors = [
 
 export default function MotionEffects() {
   useLayoutEffect(() => {
-    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-    if (reduceMotion.matches) return;
-
     const revealElements = Array.from(document.querySelectorAll<HTMLElement>(revealSelectors.join(",")));
     const staggerElements = Array.from(document.querySelectorAll<HTMLElement>(staggerSelectors.join(",")));
     const allElements = [...new Set([...revealElements, ...staggerElements])];
