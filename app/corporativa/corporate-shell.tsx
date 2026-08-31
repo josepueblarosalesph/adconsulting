@@ -51,11 +51,10 @@ export function CorporateFooter() {
         </div>
         <div className="corp-footer-column">
           <strong>Servicios</strong>
-          <Link href="/corporativa/servicios#head-hunting">Head Hunting</Link>
-          <Link href="/corporativa/servicios#seleccion">Reclutamiento y Selección</Link>
-          <Link href="/corporativa/servicios#liderazgo">Coaching y Liderazgo</Link>
-          <Link href="/corporativa/servicios#outplacement">Outplacement</Link>
-          <Link href="/corporativa/servicios#capacitaciones">Capacitaciones</Link>
+          <Link href="/corporativa/servicios#atraccion">Atracción de talento</Link>
+          <Link href="/corporativa/servicios#desarrollo">Desarrollo de personas</Link>
+          <Link href="/corporativa/servicios#carrera">Gestión de carrera</Link>
+          <Link href="/corporativa/servicios#transformacion">Transformación organizacional</Link>
         </div>
         <div className="corp-footer-column">
           <strong>Recursos</strong>
