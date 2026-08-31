@@ -168,7 +168,7 @@
 .black-site{--black:#08090a;--black-soft:#111315;--black-card:#181a1d;--silver:#b7bcc1;--silver-light:#eceff1;--black-line:#ffffff22;background:var(--black);color:#fff;overflow:hidden}
 .corp-site.black-site .corp-header{position:absolute;color:#fff;border:0;background:transparent;box-shadow:none;backdrop-filter:none}
 .black-site .corp-header .brand-logo{content:url("/ad-consulting-logo-light.png")}
-.black-site .corp-header nav{border-color:#ffffff2c;background:#0d0f10cc}
+.black-site .corp-header nav{border-color:transparent;background:transparent;backdrop-filter:none}
 .black-site .corp-header nav a{border-radius:999px;transition:color .2s ease,background .25s ease,box-shadow .25s ease}
 .black-site .corp-header nav a:hover{color:#fff;background:radial-gradient(ellipse at center,#ffffff25 0%,#ffffff12 42%,transparent 76%);box-shadow:0 0 18px #dce5e82b}
 .black-site .corp-header .corp-button{border:1px solid #ffffff30;background:#0d0f10cc;color:#fff;box-shadow:none}
