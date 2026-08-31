@@ -168,9 +168,9 @@
 .black-site{--black:#08090a;--black-soft:#111315;--black-card:#181a1d;--silver:#b7bcc1;--silver-light:#eceff1;--black-line:#ffffff22;background:var(--black);color:#fff;overflow:hidden}
 .corp-site.black-site .corp-header{position:absolute;color:#fff;border:0;background:transparent;box-shadow:none;backdrop-filter:none}
 .black-site .corp-header .brand-logo{content:url("/ad-consulting-logo-light.png")}
-.black-site .corp-header nav{border-color:transparent;background:transparent;backdrop-filter:none}
-.black-site .corp-header nav a{border-radius:999px;transition:color .2s ease,background .25s ease,box-shadow .25s ease}
-.black-site .corp-header nav a:hover{color:#fff;background:radial-gradient(ellipse at center,#ffffff25 0%,#ffffff12 42%,transparent 76%);box-shadow:0 0 18px #dce5e82b}
+.black-site .corp-header nav{border-color:#ffffff2c;background:#0d0f10cc;backdrop-filter:blur(14px)}
+.black-site .corp-header nav a{border-radius:999px;transition:color .2s ease,text-shadow .25s ease,filter .25s ease}
+.black-site .corp-header nav a:hover{color:#fff;background:transparent;box-shadow:none;text-shadow:0 0 8px #fff9,0 0 20px #dce5e86b;filter:drop-shadow(0 0 7px #dce5e850)}
 .black-site .corp-header .corp-button{border:1px solid #ffffff30;background:#0d0f10cc;color:#fff;box-shadow:none}
 .black-eyebrow{margin:0;color:#aeb4b9;font-size:11px;font-weight:900;letter-spacing:.2em;text-transform:uppercase}
 .black-hero{min-height:920px;display:flex;align-items:center;padding:145px 0 95px;position:relative;background:radial-gradient(circle at 74% 45%,#34383d 0,#17191c 25%,#08090a 58%)}
