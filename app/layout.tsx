@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import "./globals.css";
+import MotionEffects from "./motion";
 
 const nunito = Nunito({ subsets: ["latin"], variable: "--font-brand", display: "swap" });
 
@@ -20,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <body className={nunito.variable}>{children}</body>
+      <body className={nunito.variable}><MotionEffects />{children}</body>
     </html>
   );
 }

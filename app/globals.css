@@ -252,6 +252,24 @@
   .corp-challenge,.corp-method,.corp-ad50-about{padding-block:80px}.corp-site:not(.black-site) .corp-service-grid,.corp-method-grid{grid-template-columns:1fr}.corp-method-grid article{min-height:220px}
 }
 
+/* Subtle motion system */
+.motion-enabled [data-reveal]{opacity:0;will-change:transform,opacity}
+.motion-enabled [data-reveal="section"]{transform:translate3d(0,22px,0);transition:opacity .85s cubic-bezier(.22,1,.36,1),transform .85s cubic-bezier(.22,1,.36,1)}
+.motion-enabled [data-reveal="item"]{transform:translate3d(0,16px,0) scale(.992);transition:opacity .68s cubic-bezier(.22,1,.36,1),transform .68s cubic-bezier(.22,1,.36,1);transition-delay:var(--reveal-delay,0ms)}
+.motion-enabled [data-reveal].is-revealed{opacity:1;transform:translate3d(0,0,0) scale(1)}
+.motion-enabled .corp-header{animation:ad-header-enter .8s cubic-bezier(.22,1,.36,1) both}
+@keyframes ad-header-enter{from{opacity:0;transform:translate(-50%,-12px)}to{opacity:1;transform:translate(-50%,0)}}
+.corp-service-grid article,.corp-method-grid article,.corp-route-grid article,.corp-news-grid article,.corp-people-grid article,.corp-ad50-action-grid article,.black-benefit-list article{transition:transform .38s cubic-bezier(.22,1,.36,1),box-shadow .38s ease,border-color .38s ease,background-color .38s ease}
+.corp-service-grid article:hover,.corp-method-grid article:hover,.corp-route-grid article:hover,.corp-news-grid article:hover,.corp-people-grid article:hover,.corp-ad50-action-grid article:hover{transform:translateY(-4px);border-color:#e8772255;box-shadow:0 18px 42px #34363814}
+.corp-team img,.corp-platform img,.corp-ad50-hero img,.corp-ad50-about img,.corp-page-hero-split img{transition:transform .9s cubic-bezier(.22,1,.36,1),filter .9s ease}
+.corp-team:hover img,.corp-platform:hover img,.corp-ad50-hero:hover img,.corp-ad50-about:hover img,.corp-page-hero-split:hover img{transform:scale(1.012)}
+.corp-button{transition:transform .32s cubic-bezier(.22,1,.36,1),box-shadow .32s ease,background-color .32s ease}
+.corp-button:hover{transform:translateY(-2px);box-shadow:0 15px 32px #e8772238}
+
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}.motion-enabled [data-reveal]{opacity:1!important;transform:none!important;transition:none!important}.motion-enabled .corp-header{animation:none!important}.corp-site *, .black-site *{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
+
 /* Editorial proposal aligned with the approved AD Consulting system */
 .editorial-site{--navy:#343638;--navy2:#2b2d2f;--paper:#f6f6f4;--red:#e87722;--gold:#e87722;--ink:#343638;--line:#d9dad8;background:var(--paper);color:var(--ink);font-family:var(--font-brand),sans-serif}
 .editorial-site .cta-icon{display:none}
