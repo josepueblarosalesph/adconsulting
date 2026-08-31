@@ -9,6 +9,7 @@ export function CorporateHeader() {
         <Link href="/corporativa">Inicio</Link>
         <Link href="/corporativa/nosotros">Nosotros</Link>
         <Link href="/corporativa/servicios">Servicios</Link>
+        <Link href="/corporativa/black">AD Black</Link>
         <Link href="/corporativa/ad50">AD+50</Link>
         <Link href="/corporativa#actualidad">Actualidad</Link>
       </nav>
@@ -19,6 +20,7 @@ export function CorporateHeader() {
           <Link href="/corporativa">Inicio</Link>
           <Link href="/corporativa/nosotros">Nosotros</Link>
           <Link href="/corporativa/servicios">Servicios</Link>
+          <Link href="/corporativa/black">AD Black</Link>
           <Link href="/corporativa/ad50">AD+50</Link>
           <Link href="/corporativa#actualidad">Actualidad</Link>
           <a href="https://aulavirtual.adcapacitaciones.cl/">Aula Virtual</a>
@@ -43,6 +45,7 @@ export function CorporateFooter() {
           <strong>Empresa</strong>
           <Link href="/corporativa">Inicio</Link>
           <Link href="/corporativa/nosotros">Nosotros</Link>
+          <Link href="/corporativa/black">AD Black</Link>
           <Link href="/corporativa/ad50">AD+50</Link>
           <Link href="/corporativa#actualidad">Actualidad</Link>
         </div>
