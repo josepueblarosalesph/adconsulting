@@ -376,3 +376,21 @@ details[open] .mobile-menu-icon i:last-child{transform:translateY(-7px) rotate(-
 @media(max-width:600px){.corp-video-section,.editorial-film{padding-block:68px}.corp-video-frame,.editorial-film-frame{padding:4px;border-radius:18px}.corp-video-frame video,.editorial-film-frame video{border-radius:14px}.editorial-film-heading h2{font-size:37px}}
 
 @media(max-width:900px){.editorial-header>.editorial-shell{display:flex;justify-content:space-between}.editorial-mobile-menu{margin-left:auto}}
+
+/* Reveal animations live at the end of the cascade so hover transitions cannot override them. */
+@keyframes ad-reveal-section{
+  0%{opacity:0;transform:translate3d(0,26px,0)}
+  45%{opacity:.58}
+  100%{opacity:1;transform:translate3d(0,0,0)}
+}
+@keyframes ad-reveal-item{
+  0%{opacity:0;transform:translate3d(0,20px,0) scale(.985)}
+  50%{opacity:.62}
+  100%{opacity:1;transform:translate3d(0,0,0) scale(1)}
+}
+.motion-enabled [data-reveal]{transition:none!important}
+.motion-enabled [data-reveal="section"].is-revealed{opacity:1;transform:none;animation:ad-reveal-section 1s cubic-bezier(.16,1,.3,1) backwards}
+.motion-enabled [data-reveal="item"].is-revealed{opacity:1;transform:none;animation:ad-reveal-item .9s cubic-bezier(.16,1,.3,1) backwards;animation-delay:var(--reveal-delay,0ms)}
+@media(prefers-reduced-motion:reduce){
+  .motion-enabled [data-reveal].is-revealed{animation:none!important}
+}
