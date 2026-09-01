@@ -28,6 +28,7 @@ const textRevealSelectors = [
   ".corp-ad50-hero h1",
   ".corp-challenge h2",
   ".corp-services > h2",
+  ".corp-talent-flow h2",
   ".corp-method h2",
   ".corp-intro h2",
   ".corp-platform h2",

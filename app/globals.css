@@ -393,6 +393,24 @@ details[open] .mobile-menu-icon i:last-child{transform:translateY(-7px) rotate(-
 
 @media(max-width:900px){.editorial-header>.editorial-shell{display:flex;justify-content:space-between}.editorial-mobile-menu{margin-left:auto}}
 
+/* Continuous talent and brand flow */
+.corp-talent-flow{overflow:hidden;padding:110px 0 0;background:#fff;border-top:1px solid var(--co-line)}
+.corp-talent-flow>.corp-shell{display:grid;grid-template-columns:.9fr 1.1fr;gap:95px;align-items:center;padding-bottom:105px}
+.corp-talent-copy h2{max-width:610px}
+.corp-talent-copy>p:not(.corp-eyebrow){max-width:590px;color:var(--co-body);font-size:18px;line-height:1.72}
+.corp-talent-copy .corp-text-link{display:inline-flex;margin-top:18px}
+.corp-resume-stage{height:560px;position:relative;overflow:hidden;border:1px solid #edc7aa;border-radius:30px;background:radial-gradient(circle at 50% 48%,#fff 0 16%,#fff3e9 43%,#f7ede5 72%)}
+.corp-resume-stage:before{content:"";position:absolute;inset:0;background-image:radial-gradient(#e8772242 1px,transparent 1px);background-size:11px 11px;mask-image:radial-gradient(circle,#000 0%,transparent 70%)}
+.corp-resume-stage:after{content:"Talento en movimiento";position:absolute;z-index:4;left:24px;bottom:20px;color:#a24710;font-size:10px;font-weight:900;letter-spacing:.16em;text-transform:uppercase}
+.corp-resume-sheet{width:285px;height:365px;position:absolute;z-index:2;left:50%;top:50%;padding:24px;border:1px solid #e8772275;border-radius:5px;background:#fff;box-shadow:0 25px 55px #7b3f1726;animation:corp-resume-flow 15s linear infinite;will-change:transform,opacity}
+.corp-resume-head{display:flex;align-items:center;gap:14px;margin-bottom:27px}.corp-resume-head>span{width:48px;height:48px;display:grid;place-items:center;border-radius:50%;background:#fff0e5;color:var(--co-dark);font-weight:900}.corp-resume-head div{display:flex;flex-direction:column}.corp-resume-head b{font-size:13px}.corp-resume-head small{margin-top:4px;color:var(--co);font-size:10px;font-weight:850;text-transform:uppercase;letter-spacing:.08em}.corp-resume-sheet>i{height:7px;display:block;margin:11px 0;border-radius:10px;background:#d9dad8}.corp-resume-sheet>i:nth-of-type(2){width:86%}.corp-resume-line-short{width:65%!important}.corp-resume-skills{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin:28px 0}.corp-resume-skills span{height:55px;border-radius:7px;background:linear-gradient(145deg,#fff3e9,#f3d0b5)}.corp-resume-sheet>p{margin:0;color:#747779;font-size:10px;font-weight:750;line-height:1.5}
+@keyframes corp-resume-flow{0%{opacity:0;transform:translate(-50%,90%) rotate(-4deg) scale(.9)}10%{opacity:1}45%{transform:translate(-50%,-48%) rotate(1deg) scale(1)}82%{opacity:1}100%{opacity:0;transform:translate(-50%,-190%) rotate(4deg) scale(.94)}}
+.corp-brand-marquee{overflow:hidden;border-block:1px solid var(--co-line);background:var(--co-paper)}
+.corp-brand-track{width:max-content;display:flex;animation:corp-brand-scroll 42s linear infinite;will-change:transform}.corp-brand-set{display:flex;align-items:center;gap:85px;padding:28px 42px}.corp-brand-set img{width:150px;max-height:58px;object-fit:contain}.corp-brand-set strong,.corp-brand-set span{white-space:nowrap;color:#55595b;font-weight:900;letter-spacing:.08em}.corp-brand-set strong{font-size:17px}.corp-brand-set span{font-size:12px}
+@keyframes corp-brand-scroll{to{transform:translateX(-50%)}}
+@media(max-width:900px){.corp-talent-flow>.corp-shell{grid-template-columns:1fr;gap:48px}.corp-resume-stage{height:500px}.corp-brand-set{gap:55px}}
+@media(max-width:600px){.corp-talent-flow{padding-top:78px}.corp-talent-flow>.corp-shell{padding-bottom:75px}.corp-talent-copy h2{font-size:39px}.corp-talent-copy>p:not(.corp-eyebrow){font-size:16px}.corp-resume-stage{height:440px;border-radius:22px}.corp-resume-sheet{width:235px;height:315px;padding:20px}.corp-resume-skills{margin:20px 0}.corp-brand-set{gap:38px;padding:22px 25px}.corp-brand-set img{width:125px}.corp-brand-set strong{font-size:14px}.corp-brand-set span{font-size:10px}}
+
 /* Reveal animations live at the end of the cascade so hover transitions cannot override them. */
 @keyframes ad-reveal-section{
   0%{opacity:0;transform:translate3d(0,26px,0)}
@@ -414,4 +432,5 @@ details[open] .mobile-menu-icon i:last-child{transform:translateY(-7px) rotate(-
 @media(prefers-reduced-motion:reduce){
   .motion-enabled [data-reveal="section"].is-revealed,.motion-enabled [data-reveal="item"].is-revealed{transform:none;animation:ad-soft-fade .5s ease backwards;animation-delay:var(--reveal-delay,0ms)}
   .motion-word{transform:translate3d(0,35%,0);transition:transform .7s cubic-bezier(.16,1,.3,1),opacity .5s ease;transition-delay:var(--word-delay,0ms)}
+  .corp-resume-sheet{animation:none}.corp-resume-sheet:not(:first-child){display:none}.corp-resume-sheet:first-child{opacity:1;transform:translate(-50%,-50%)}.corp-brand-track{animation:none}
 }
