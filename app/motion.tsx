@@ -102,9 +102,35 @@ export default function MotionEffects() {
 
     textElements.forEach((element) => textObserver.observe(element));
 
+    const spectrum = document.querySelector<HTMLElement>(".corp-spectrum");
+    const spectrumVisual = spectrum?.querySelector<HTMLElement>(".corp-spectrum-visual");
+    let spectrumFrame = 0;
+
+    const updateSpectrum = () => {
+      spectrumFrame = 0;
+      if (!spectrum || !spectrumVisual) return;
+      const visualTop = spectrumVisual.getBoundingClientRect().top;
+      const viewportHeight = window.innerHeight;
+      const progress = Math.min(1, Math.max(0, (viewportHeight * 0.9 - visualTop) / (viewportHeight * 0.68)));
+      spectrum.style.setProperty("--spectrum-progress", progress.toFixed(4));
+    };
+
+    const requestSpectrumUpdate = () => {
+      if (spectrumFrame) return;
+      spectrumFrame = window.requestAnimationFrame(updateSpectrum);
+    };
+
+    updateSpectrum();
+    window.addEventListener("scroll", requestSpectrumUpdate, { passive: true });
+    window.addEventListener("resize", requestSpectrumUpdate);
+
     return () => {
       observer.disconnect();
       textObserver.disconnect();
+      window.removeEventListener("scroll", requestSpectrumUpdate);
+      window.removeEventListener("resize", requestSpectrumUpdate);
+      if (spectrumFrame) window.cancelAnimationFrame(spectrumFrame);
+      spectrum?.style.removeProperty("--spectrum-progress");
       document.documentElement.classList.remove("motion-enabled");
       allElements.forEach((element) => {
         delete element.dataset.reveal;
