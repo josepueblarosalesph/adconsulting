@@ -136,9 +136,9 @@
 .corp-site .corp-service-grid article>a{padding-top:14px}
 .corp-site .corp-proof p{align-items:center}.corp-site .corp-proof strong{font-size:15px}
 .corp-video-section{padding:88px 0 104px;background:#fff;border-bottom:1px solid var(--co-line)}
-.corp-video-heading{display:grid;grid-template-columns:.42fr 1fr;gap:54px;align-items:end;margin-bottom:36px}
-.corp-video-heading .corp-eyebrow{margin:0}
-.corp-video-heading h2{max-width:720px;margin:0}
+.corp-video-heading{display:grid;grid-template-columns:.52fr 1fr;gap:38px;align-items:center;margin-bottom:36px}
+.corp-video-heading .corp-eyebrow{margin:0;font-size:14px;line-height:1.4;letter-spacing:.14em}
+.corp-video-heading h2{max-width:720px;margin:0;font-size:clamp(40px,4vw,54px)}
 .corp-video-frame{padding:8px;border-radius:28px;background:var(--co-paper);box-shadow:0 28px 70px #34363824}
 .corp-video-frame video{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:21px;background:#1d1e1f}
 .corp-footer-brand .brand-logo{margin-top:-10px}
