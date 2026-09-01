@@ -4,7 +4,7 @@ import { useLayoutEffect } from "react";
 import { usePathname } from "next/navigation";
 
 const revealSelectors = [
-  ".corp-site section > .corp-shell",
+  ".corp-site section:not(.corp-spectrum) > .corp-shell",
   ".corp-site section.corp-shell",
   ".black-site section > .corp-shell",
   ".corp-footer-main",
