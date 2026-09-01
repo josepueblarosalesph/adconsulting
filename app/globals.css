@@ -234,8 +234,8 @@
 .corp-spectrum-copy h2{margin:0;font-size:clamp(43px,5vw,64px);line-height:1;letter-spacing:-.045em}
 .corp-spectrum-copy h2 span{color:var(--co)}
 .corp-spectrum-copy>p:last-child{max-width:680px;margin:25px auto 0;color:var(--co-body);font-size:18px;line-height:1.7}
-.corp-spectrum-visual{height:430px;position:absolute;z-index:1;left:50%;right:auto;bottom:-135px;width:100vw;display:flex;align-items:flex-start;transform:translateX(-50%)}
-.corp-spectrum-bar{height:68%;position:relative;top:0;flex:1 1 0;min-width:0;margin-left:-1px;transform-origin:center top;background:#f47a29;filter:saturate(calc(.92 + var(--spectrum-progress)*.08));will-change:top,filter}
+.corp-spectrum-visual{height:430px;position:absolute;z-index:1;left:50%;right:auto;bottom:-85px;width:100vw;display:flex;align-items:flex-start;transform:translateX(-50%)}
+.corp-spectrum-bar{height:78%;position:relative;top:0;flex:1 1 0;min-width:0;margin-left:-1px;transform-origin:center top;background:#f47a29;filter:saturate(calc(.92 + var(--spectrum-progress)*.08));will-change:top,filter}
 .corp-spectrum-bar:first-child{margin-left:0}
 .corp-spectrum-bar::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#ffad45 0%,#f47727 35%,#d94f1d 72%,#f6a15f 100%);opacity:var(--spectrum-progress)}
 .corp-spectrum-bar:nth-child(3n+2)::after{background:linear-gradient(180deg,#ffc266 0%,#ee6e25 38%,#ca421b 74%,#f89a58 100%)}
@@ -262,10 +262,10 @@
 .corp-ad50-about img{width:100%;border-radius:26px;box-shadow:0 26px 60px #34363824}
 
 @media(max-width:900px){
-  .corp-challenge>div,.corp-ad50-about>div{grid-template-columns:1fr;gap:30px}.corp-method-grid{grid-template-columns:repeat(2,1fr)}.corp-spectrum,.corp-spectrum>.corp-shell{min-height:760px}.corp-spectrum>.corp-shell{padding-top:80px}.corp-spectrum-visual{height:350px;bottom:-105px}
+  .corp-challenge>div,.corp-ad50-about>div{grid-template-columns:1fr;gap:30px}.corp-method-grid{grid-template-columns:repeat(2,1fr)}.corp-spectrum,.corp-spectrum>.corp-shell{min-height:760px}.corp-spectrum>.corp-shell{padding-top:80px}.corp-spectrum-visual{height:350px;bottom:-70px}
 }
 @media(max-width:600px){
-  .corp-challenge,.corp-method,.corp-ad50-about{padding-block:80px}.corp-site:not(.black-site) .corp-service-grid,.corp-method-grid{grid-template-columns:1fr}.corp-method-grid article{min-height:220px}.corp-spectrum,.corp-spectrum>.corp-shell{min-height:690px}.corp-spectrum>.corp-shell{padding-top:70px}.corp-spectrum-copy h2{font-size:39px}.corp-spectrum-copy>p:last-child{font-size:16px}.corp-spectrum-visual{height:280px;bottom:-80px;width:125vw}.corp-services-spectrum{padding-top:105px}
+  .corp-challenge,.corp-method,.corp-ad50-about{padding-block:80px}.corp-site:not(.black-site) .corp-service-grid,.corp-method-grid{grid-template-columns:1fr}.corp-method-grid article{min-height:220px}.corp-spectrum,.corp-spectrum>.corp-shell{min-height:690px}.corp-spectrum>.corp-shell{padding-top:70px}.corp-spectrum-copy h2{font-size:39px}.corp-spectrum-copy>p:last-child{font-size:16px}.corp-spectrum-visual{height:280px;bottom:-45px;width:125vw}.corp-services-spectrum{padding-top:105px}
 }
 
 /* Subtle motion system */
