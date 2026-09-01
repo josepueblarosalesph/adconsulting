@@ -104,6 +104,7 @@ export default function MotionEffects() {
 
     const spectrum = document.querySelector<HTMLElement>(".corp-spectrum");
     const spectrumVisual = spectrum?.querySelector<HTMLElement>(".corp-spectrum-visual");
+    const spectrumBars = Array.from(spectrum?.querySelectorAll<HTMLElement>(".corp-spectrum-bar") ?? []);
     let spectrumFrame = 0;
 
     const updateSpectrum = () => {
@@ -113,6 +114,12 @@ export default function MotionEffects() {
       const viewportHeight = window.innerHeight;
       const progress = Math.min(1, Math.max(0, (viewportHeight * 0.9 - visualTop) / (viewportHeight * 0.68)));
       spectrum.style.setProperty("--spectrum-progress", progress.toFixed(4));
+      spectrumBars.forEach((bar) => {
+        const targetTop = Number(bar.dataset.barTop ?? 0);
+        const targetHeight = Number(bar.dataset.barHeight ?? 100);
+        bar.style.top = `${targetTop * progress}%`;
+        bar.style.height = `${100 - (100 - targetHeight) * progress}%`;
+      });
     };
 
     const requestSpectrumUpdate = () => {
@@ -131,6 +138,10 @@ export default function MotionEffects() {
       window.removeEventListener("resize", requestSpectrumUpdate);
       if (spectrumFrame) window.cancelAnimationFrame(spectrumFrame);
       spectrum?.style.removeProperty("--spectrum-progress");
+      spectrumBars.forEach((bar) => {
+        bar.style.removeProperty("top");
+        bar.style.removeProperty("height");
+      });
       document.documentElement.classList.remove("motion-enabled");
       allElements.forEach((element) => {
         delete element.dataset.reveal;

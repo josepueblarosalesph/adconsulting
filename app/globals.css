@@ -227,7 +227,7 @@
 .corp-challenge h2{max-width:850px;margin:0 0 25px}
 .corp-challenge p:not(.corp-eyebrow){max-width:760px;color:#d7d9da;font-size:18px;line-height:1.72}
 .corp-challenge blockquote{max-width:760px;margin:35px 0 0;padding:22px 25px;border-left:4px solid var(--co);background:#ffffff0b;color:#fff;font-size:20px;font-weight:800;font-style:italic}
-.corp-spectrum{--spectrum-progress:0;position:relative;min-height:860px;overflow:hidden;background:var(--co-paper);border-bottom:0}
+.corp-spectrum{--spectrum-progress:0;position:relative;min-height:860px;overflow:visible;background:var(--co-paper);border-bottom:0}
 .corp-spectrum>.corp-shell{min-height:860px;position:relative;padding-top:100px}
 .corp-spectrum-copy{position:relative;z-index:3;max-width:820px;margin-inline:auto;text-align:center}
 .corp-spectrum-copy .corp-eyebrow{margin-bottom:20px}
@@ -235,7 +235,7 @@
 .corp-spectrum-copy h2 span{color:var(--co)}
 .corp-spectrum-copy>p:last-child{max-width:680px;margin:25px auto 0;color:var(--co-body);font-size:18px;line-height:1.7}
 .corp-spectrum-visual{height:430px;position:absolute;z-index:1;left:50%;right:auto;bottom:-195px;width:100vw;display:flex;align-items:flex-start;transform:translateX(-50%);mask-image:linear-gradient(to bottom,#000 0%,#000 67%,transparent 100%)}
-.corp-spectrum-bar{height:calc(100% - (100% - var(--bar-height))*var(--spectrum-progress));position:relative;flex:1 1 0;min-width:0;margin-left:-1px;transform-origin:center top;background:#f47a29;filter:saturate(calc(.92 + var(--spectrum-progress)*.08));will-change:height,filter}
+.corp-spectrum-bar{height:100%;position:relative;top:0;flex:1 1 0;min-width:0;margin-left:-1px;transform-origin:center top;background:#f47a29;filter:saturate(calc(.92 + var(--spectrum-progress)*.08));will-change:height,top,filter}
 .corp-spectrum-bar:first-child{margin-left:0}
 .corp-spectrum-bar::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#ffad45 0%,#f47727 35%,#d94f1d 72%,#f6a15f 100%);opacity:var(--spectrum-progress)}
 .corp-spectrum-bar:nth-child(3n+2)::after{background:linear-gradient(180deg,#ffc266 0%,#ee6e25 38%,#ca421b 74%,#f89a58 100%)}
