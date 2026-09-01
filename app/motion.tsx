@@ -116,9 +116,7 @@ export default function MotionEffects() {
       spectrum.style.setProperty("--spectrum-progress", progress.toFixed(4));
       spectrumBars.forEach((bar) => {
         const targetTop = Number(bar.dataset.barTop ?? 0);
-        const targetHeight = Number(bar.dataset.barHeight ?? 100);
         bar.style.top = `${targetTop * progress}%`;
-        bar.style.height = `${100 - (100 - targetHeight) * progress}%`;
       });
     };
 
@@ -140,7 +138,6 @@ export default function MotionEffects() {
       spectrum?.style.removeProperty("--spectrum-progress");
       spectrumBars.forEach((bar) => {
         bar.style.removeProperty("top");
-        bar.style.removeProperty("height");
       });
       document.documentElement.classList.remove("motion-enabled");
       allElements.forEach((element) => {
