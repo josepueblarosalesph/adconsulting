@@ -235,7 +235,6 @@
 .corp-spectrum-copy h2 span{color:var(--co)}
 .corp-spectrum-copy>p:last-child{max-width:680px;margin:25px auto 0;color:var(--co-body);font-size:18px;line-height:1.7}
 .corp-spectrum-visual{height:430px;position:absolute;z-index:1;left:50%;right:auto;bottom:-195px;width:100vw;display:flex;align-items:flex-start;transform:translateX(-50%)}
-.corp-spectrum-visual::before{content:"";position:absolute;inset:0;z-index:2;pointer-events:none;background:#f47a29;opacity:calc(1 - var(--spectrum-progress))}
 .corp-spectrum-bar{height:68%;position:relative;top:0;flex:1 1 0;min-width:0;margin-left:-1px;transform-origin:center top;background:#f47a29;filter:saturate(calc(.92 + var(--spectrum-progress)*.08));will-change:top,filter}
 .corp-spectrum-bar:first-child{margin-left:0}
 .corp-spectrum-bar::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#ffad45 0%,#f47727 35%,#d94f1d 72%,#f6a15f 100%);opacity:var(--spectrum-progress)}
