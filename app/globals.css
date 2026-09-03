@@ -438,7 +438,7 @@ details[open] .mobile-menu-icon i:last-child{transform:translateY(-7px) rotate(-
 .corp-site{--co:#e87722;--co-deep:#b5540d;--co-hover:#9c4407;--co-petroleum:#1e2f3e;--co-petroleum-dark:#16232e;--co-sand:#fbe8d8;--co-peach:#f2a36a;--co-paper:#f6f6f4;--co-dark:#343638;--co-body:#5e6163;--co-line:#d9dad8;background:var(--co-paper);color:var(--co-dark)}
 .corp-site h1,.corp-site h2,.corp-site h3{color:var(--co-dark)}
 .corp-site h1 span,.corp-site h2 span,.corp-site h3 span,.corp-site .corp-text-link,.corp-site article>a{color:var(--co-deep)}
-.corp-about-hero h1{max-width:900px;font-size:clamp(46px,5.25vw,68px);line-height:1.06;letter-spacing:-.035em}
+.corp-about-hero h1{max-width:860px;font-size:clamp(42px,4.7vw,60px);line-height:1.1;letter-spacing:-.03em}
 .corp-about-hero h1 .motion-word-mask{padding-top:.12em;margin-top:-.12em}
 .corp-site .corp-eyebrow{display:table;padding:8px 13px;border-radius:999px;background:var(--co-sand);color:var(--co-deep);line-height:1}
 .corp-site .corp-button{border-color:var(--co-deep);background:var(--co-deep);color:#fff;box-shadow:0 12px 28px #b5540d28}
@@ -469,4 +469,4 @@ details[open] .mobile-menu-icon i:last-child{transform:translateY(-7px) rotate(-
 
 
 @media(max-width:900px){.corp-hero:before{width:760px;right:-420px;opacity:.68}.corp-proof{margin-top:-18px}.corp-challenge{border-radius:38px 38px 0 0}.corp-challenge>div>div{grid-template-columns:1fr;gap:26px}.corp-challenge h2{grid-column:auto}.corp-method-path{display:none}.corp-method-grid{margin-top:42px}.corp-service-grid article:nth-child(even),.corp-method-grid article:nth-child(n){transform:none}.corp-spectrum,.corp-spectrum>.corp-shell{min-height:720px}.corp-spectrum-visual{height:390px}}
-@media(max-width:600px){.corp-hero:after{bottom:105px}.corp-proof{padding:22px;border-radius:20px}.corp-video-section,.corp-challenge,.corp-method,.corp-intro,.corp-routes,.corp-platform,.corp-news,.corp-contact{padding-block:68px}.corp-spectrum,.corp-spectrum>.corp-shell{min-height:650px}.corp-services-spectrum{padding-top:96px}.corp-site .corp-eyebrow{padding:7px 11px}.corp-about-hero h1{font-size:39px;line-height:1.08}.corp-service-grid article:nth-child(even){transform:none}.corp-footer{padding-top:58px}}
+@media(max-width:600px){.corp-hero:after{bottom:105px}.corp-proof{padding:22px;border-radius:20px}.corp-video-section,.corp-challenge,.corp-method,.corp-intro,.corp-routes,.corp-platform,.corp-news,.corp-contact{padding-block:68px}.corp-spectrum,.corp-spectrum>.corp-shell{min-height:650px}.corp-services-spectrum{padding-top:96px}.corp-site .corp-eyebrow{padding:7px 11px}.corp-about-hero h1{font-size:36px;line-height:1.12}.corp-service-grid article:nth-child(even){transform:none}.corp-footer{padding-top:58px}}
