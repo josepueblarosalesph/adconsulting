@@ -440,6 +440,11 @@ details[open] .mobile-menu-icon i:last-child{transform:translateY(-7px) rotate(-
 .corp-site h1 span,.corp-site h2 span,.corp-site h3 span,.corp-site .corp-text-link,.corp-site article>a{color:var(--co-deep)}
 .corp-about-hero h1{max-width:860px;font-size:clamp(42px,4.7vw,60px);line-height:1.1;letter-spacing:-.03em}
 .corp-about-hero h1 .motion-word-mask{padding-top:.12em;margin-top:-.12em}
+.corp-story-section{background:var(--co-petroleum);color:#fff}
+.corp-story-section .corp-story h2{color:#fff}
+.corp-story-section .corp-story h2 span{color:var(--co-peach)}
+.corp-story-section .corp-story>div:last-child{color:#dbe3e8}
+.corp-story-section .corp-eyebrow{background:#ffffff14;color:var(--co-peach)}
 .corp-site .corp-eyebrow{display:table;padding:8px 13px;border-radius:999px;background:var(--co-sand);color:var(--co-deep);line-height:1}
 .corp-site .corp-button{border-color:var(--co-deep);background:var(--co-deep);color:#fff;box-shadow:0 12px 28px #b5540d28}
 .corp-site .corp-button:hover{background:var(--co-hover);box-shadow:0 15px 34px #9c440735}
