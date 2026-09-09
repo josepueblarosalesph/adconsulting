@@ -450,7 +450,7 @@ details[open] .mobile-menu-icon i:last-child{transform:translateY(-7px) rotate(-
 .corp-site .corp-button:hover{background:var(--co-hover);box-shadow:0 15px 34px #9c440735}
 
 .corp-hero{position:relative;overflow:hidden;padding-bottom:48px;background:var(--co-paper)}
-.corp-hero:before{content:"";position:absolute;width:min(62vw,850px);aspect-ratio:1;right:-12vw;top:5%;border-radius:48% 52% 61% 39%/42% 38% 62% 58%;background:radial-gradient(circle at 36% 32%,#ffd0a6 0 10%,#f39a50 44%,#dc6d1e 100%);opacity:.9;transform:rotate(-8deg);transform-origin:52% 48%;animation:corp-hero-blob 14s ease-in-out infinite;will-change:transform,border-radius}
+.corp-hero:before{display:none}
 .corp-hero:after{content:"TALENTO";position:absolute;z-index:0;left:50%;bottom:145px;transform:translateX(-50%);color:transparent;-webkit-text-stroke:2px #b5540d24;font-size:clamp(95px,17vw,270px);font-weight:950;letter-spacing:-.08em;line-height:.7;pointer-events:none}
 .corp-hero>.corp-shell{position:relative;z-index:1}.corp-hero .corp-lead{position:relative;z-index:2}.corp-hero .corp-lead h1{max-width:760px}.corp-team{overflow:hidden;border:0;background:transparent;box-shadow:0 25px 60px #1e2f3e1c}.corp-team:after{display:none}.corp-team img{filter:none!important;opacity:1!important}
 .corp-proof{position:relative;z-index:4;margin-top:-28px;padding:26px 34px;border:0;border-radius:26px;background:var(--co-petroleum);color:#fff;box-shadow:0 22px 52px #16232e2e}
