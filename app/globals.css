@@ -493,3 +493,6 @@ details[open] .mobile-menu-icon i:last-child{transform:translateY(-7px) rotate(-
 
 @media(max-width:1050px){.corp-ad50-problem{grid-template-columns:1fr;gap:44px}.corp-ad50-problem>div:first-child{position:static}.corp-ad50-problem-grid article{grid-template-columns:54px 170px 1fr}}
 @media(max-width:720px){.corp-ad50-problem-grid article{grid-template-columns:50px 1fr;gap:14px 18px;padding:23px}.corp-ad50-problem-grid article ul{grid-column:1/-1;grid-template-columns:1fr;gap:5px}.corp-ad50-problem-grid h3{margin-top:10px}.corp-ad50-problem-grid article li{padding-block:6px}}
+
+/* Animated word wrappers must preserve the authored heading colors. */
+.motion-word-mask,.motion-word{color:inherit!important}
