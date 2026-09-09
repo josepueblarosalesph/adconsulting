@@ -502,3 +502,12 @@ details[open] .mobile-menu-icon i:last-child{transform:translateY(-7px) rotate(-
 /* Larger navigation labels */
 .corp-header nav a{padding-inline:13px;font-size:16px}
 .corp-mobile-menu a{font-size:16px}
+
+/* Scannable challenges with an editorial closing line. */
+.corp-challenge-points ol{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 28px;list-style:none;counter-reset:challenge;margin:0;padding:0}
+.corp-challenge-points li{counter-increment:challenge;position:relative;padding:26px 0 0;border-top:1px solid #ffffff29;color:#dbe3e8;font-size:18px;line-height:1.55}
+.corp-challenge-points li:before{content:"0" counter(challenge);display:block;margin-bottom:12px;color:var(--co-peach);font-size:12px;font-weight:900;letter-spacing:.12em}
+.corp-challenge-points li strong{color:#fff;font-weight:800}
+.corp-challenge .corp-challenge-points .corp-challenge-pace{margin:28px 0 0;padding:16px 0 0;border-top:1px solid #ffffff29;color:#dbe3e8;font-size:17px;line-height:1.55}
+.corp-challenge-pace strong{color:var(--co-peach);font-weight:800}
+@media(max-width:480px){.corp-challenge-points ol{grid-template-columns:1fr;gap:20px}.corp-challenge-points li{padding-top:16px}}
