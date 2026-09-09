@@ -505,9 +505,12 @@ details[open] .mobile-menu-icon i:last-child{transform:translateY(-7px) rotate(-
 
 /* Scannable challenges with an editorial closing line. */
 .corp-challenge-points ol{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px 28px;list-style:none;counter-reset:challenge;margin:0;padding:0}
-.corp-challenge-points li{counter-increment:challenge;position:relative;padding:26px 0 0;border-top:1px solid #ffffff29;color:#dbe3e8;font-size:18px;line-height:1.55}
-.corp-challenge-points li:before{content:"0" counter(challenge);display:block;margin-bottom:12px;color:var(--co-peach);font-size:12px;font-weight:900;letter-spacing:.12em}
+.corp-challenge-points li{counter-increment:challenge;position:relative;min-height:112px;padding:22px;border:1px solid #ffffff20;border-radius:18px;background:#ffffff09;color:#dbe3e8;font-size:18px;line-height:1.55;opacity:0;animation:challenge-card-in .72s cubic-bezier(.22,1,.36,1) forwards;animation-delay:calc(var(--challenge-index,0) * 130ms)}
+.corp-challenge-points li:nth-child(1){--challenge-index:0}.corp-challenge-points li:nth-child(2){--challenge-index:1}.corp-challenge-points li:nth-child(3){--challenge-index:2}.corp-challenge-points li:nth-child(4){--challenge-index:3}
+.corp-challenge-points li:before{content:"0" counter(challenge);display:block;margin-bottom:10px;color:var(--co-peach);font-size:12px;font-weight:900;letter-spacing:.12em}
 .corp-challenge-points li strong{color:#fff;font-weight:800}
 .corp-challenge .corp-challenge-points .corp-challenge-pace{margin:28px 0 0;padding:16px 0 0;border-top:1px solid #ffffff29;color:#dbe3e8;font-size:17px;line-height:1.55}
 .corp-challenge-pace strong{color:var(--co-peach);font-weight:800}
+.corp-challenge .corp-challenge-points .corp-challenge-pace{padding:20px 24px;border:1px solid #f2a36a55;border-radius:18px;background:#f2a36a14}
+@keyframes challenge-card-in{from{opacity:0;transform:translate3d(0,18px,0)}to{opacity:1;transform:translate3d(0,0,0)}}
 @media(max-width:480px){.corp-challenge-points ol{grid-template-columns:1fr;gap:20px}.corp-challenge-points li{padding-top:16px}}
