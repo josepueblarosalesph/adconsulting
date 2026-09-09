@@ -538,4 +538,4 @@ details[open] .mobile-menu-icon i:last-child{transform:translateY(-7px) rotate(-
 .corp-challenge-points>p>span.corp-challenge-pace{padding:0;border:0;background:transparent}
 .corp-challenge-points>p>span strong{color:#fff;font-weight:800}
 @keyframes challenge-phrase-cycle{0%,5%{opacity:0;transform:translateY(8px)}10%,22%{opacity:1;transform:translateY(0)}27%,100%{opacity:0;transform:translateY(-8px)}}
-@media(max-width:480px){.corp-challenge-points>p{min-height:3.2em;font-size:20px;line-height:1.45}.corp-challenge-points>p>span{white-space:normal}}
+@media(max-width:480px){.corp-challenge-points>p{min-height:1.6em;font-size:20px;line-height:1.45}.corp-challenge-points>p>span{white-space:nowrap}}
