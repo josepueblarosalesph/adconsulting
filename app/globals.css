@@ -508,7 +508,7 @@ details[open] .mobile-menu-icon i:last-child{transform:translateY(-7px) rotate(-
 .corp-services-spectrum>.corp-eyebrow{display:block;width:auto;margin:0 auto 20px;padding:0;background:transparent;color:var(--co-deep);font-size:20px;text-align:center}
 .corp-services-spectrum>h2{font-size:clamp(36px,4vw,52px);line-height:1.08}
 .corp-services-spectrum>h2{font-size:60px!important}
-.corp-service-grid article{display:grid;grid-template-columns:auto 1fr;column-gap:14px;align-content:start}
+.corp-service-grid article{display:grid;grid-template-columns:auto 1fr;column-gap:14px;align-content:start;min-height:0}
 .corp-service-grid article>span{display:inline-flex;width:48px;height:48px;align-items:center;justify-content:center;align-self:start;margin:0;color:var(--co)!important;text-align:center;line-height:1}
 .corp-service-grid h3{display:block;align-self:start;margin:0 0 12px;transform:translateY(-2px)}
 .corp-service-grid article>p,.corp-service-grid article>a{grid-column:1/-1}
