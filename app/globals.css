@@ -509,7 +509,7 @@ details[open] .mobile-menu-icon i:last-child{transform:translateY(-7px) rotate(-
 .corp-services-spectrum>h2{font-size:clamp(36px,4vw,52px);line-height:1.08}
 .corp-services-spectrum>h2{font-size:60px!important}
 .corp-service-grid article{display:grid;grid-template-columns:auto 1fr;column-gap:14px;align-content:start}
-.corp-service-grid article>span{display:inline-flex;align-self:start;margin:0}
+.corp-service-grid article>span{display:inline-flex;width:48px;height:48px;align-items:center;justify-content:center;align-self:start;margin:0;color:var(--co)!important;text-align:center;line-height:1}
 .corp-service-grid h3{display:block;align-self:start;margin:8px 0 12px}
 .corp-service-grid article>p,.corp-service-grid article>a{grid-column:1/-1}
 .corp-services-spectrum>h2 .corp-services-title-line{display:block;white-space:nowrap}
