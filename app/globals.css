@@ -445,6 +445,8 @@ details[open] .mobile-menu-icon i:last-child{transform:translateY(-7px) rotate(-
 .corp-story-section .corp-story h2 span{color:var(--co-peach)}
 .corp-story-section .corp-story>div:last-child{color:#dbe3e8}
 .corp-story-section .corp-eyebrow{background:#ffffff14;color:var(--co-peach)}
+.corp-coverage h2,.corp-ad50-actions h2{color:#fff}
+.corp-coverage h2 span,.corp-ad50-actions h2 span{color:var(--co-peach)}
 .corp-site .corp-eyebrow{display:table;padding:8px 13px;border-radius:999px;background:var(--co-sand);color:var(--co-deep);line-height:1}
 .corp-site .corp-button{border-color:var(--co-deep);background:var(--co-deep);color:#fff;box-shadow:0 12px 28px #b5540d28}
 .corp-site .corp-button:hover{background:var(--co-hover);box-shadow:0 15px 34px #9c440735}
