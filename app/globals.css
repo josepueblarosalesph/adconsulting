@@ -508,6 +508,7 @@ details[open] .mobile-menu-icon i:last-child{transform:translateY(-7px) rotate(-
 .corp-services-spectrum>.corp-eyebrow{display:block;width:auto;margin:0 auto 20px;padding:0;background:transparent;color:var(--co-deep);font-size:20px;text-align:center}
 .corp-services-spectrum>h2{font-size:clamp(36px,4vw,52px);line-height:1.08}
 .corp-services-spectrum>h2 .corp-services-title-line{display:block;white-space:nowrap}
+.corp-services-spectrum>h2 .corp-services-title-line{color:var(--co-ink)!important}
 .corp-services-spectrum>h2 em{font-style:normal;color:var(--co)}
 @media(max-width:600px){.corp-services-spectrum>h2 .corp-services-title-line{white-space:normal}}
 .corp-talent-flow .corp-eyebrow,.corp-method .corp-eyebrow,.corp-intro .corp-eyebrow,.corp-routes .corp-eyebrow,.corp-platform .corp-eyebrow,.corp-news .corp-eyebrow,.corp-contact .corp-eyebrow{display:block;width:auto;padding:0;background:transparent;font-size:20px}
