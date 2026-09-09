@@ -504,6 +504,7 @@ details[open] .mobile-menu-icon i:last-child{transform:translateY(-7px) rotate(-
 .corp-service-grid article:nth-child(1) h3{color:var(--co-dark)}
 .corp-service-grid article:nth-child(1) p{color:var(--co-body)}
 .corp-service-grid article:nth-child(1)>span{background:#fff;color:var(--co-deep)}
+.corp-spectrum-copy .corp-eyebrow{display:block;width:auto;margin:0 auto 20px;padding:0;background:transparent;color:var(--co-deep);font-size:20px;text-align:center}
 
 /* Larger navigation labels */
 .corp-header nav a{padding-inline:13px;font-size:16px}
