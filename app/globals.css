@@ -505,7 +505,7 @@ details[open] .mobile-menu-icon i:last-child{transform:translateY(-7px) rotate(-
 .corp-service-grid article:nth-child(1) p{color:var(--co-body)}
 .corp-service-grid article:nth-child(1)>span{background:#fff;color:var(--co-deep)}
 .corp-spectrum-copy .corp-eyebrow{display:block;width:auto;margin:0 auto 20px;padding:0;background:transparent;color:var(--co-deep);font-size:20px;text-align:center}
-.corp-challenge>div{text-align:center}.corp-challenge .corp-eyebrow{justify-self:center}.corp-challenge>div>div{display:block}.corp-challenge h2,.corp-challenge p:not(.corp-eyebrow){margin-inline:auto}.corp-challenge-points>p{text-align:center}
+.corp-challenge>div{text-align:center}.corp-challenge .corp-eyebrow{justify-self:center;margin-inline:auto}.corp-challenge>div>div{display:block;max-width:1080px;margin-inline:auto}.corp-challenge h2,.corp-challenge p:not(.corp-eyebrow),.corp-challenge .corp-challenge-points{text-align:center!important;margin-inline:auto}.corp-challenge-points>p{text-align:center!important}
 .corp-services-spectrum{padding-top:82px}
 
 /* Larger navigation labels */
